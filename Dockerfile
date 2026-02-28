@@ -1,23 +1,15 @@
-# base image of python
+# Take a pattela
 
-FROM python:latest
+FROM nginx
 
-# SET the workingdir
+# Cooker
 
 WORKDIR /app
 
-# COPY local machine file to container
+# Ingredients
 
-COPY requrements.txt app.py .
+COPY index.html /usr/share/nginx/html 
 
-# RUN install the dependencies
-
-RUN pip install -r requrements.txt
-
-# open the port using Expose
-
-EXPOSE 5000
-
-# CMD to run the command when container is running
-
-CMD [ "python", "app.py" ]
+# where the web-page can access
+ 
+EXPOSE 80 
