@@ -1,0 +1,19 @@
+# Base image of the 
+
+FROM ubuntu
+
+# update the ubuntu os and install a package , also create a file
+
+RUN apt-get update
+
+RUN apt-get install vim -y
+
+RUN touch /tmp/dummy
+
+#Entry Point
+
+ENTRYPOINT ["echo", "hi adam"]
+#CMD
+
+#CMD ["/bin/bash"]
+

@@ -1,0 +1,3 @@
+#Ignore these entries
+
+node_modules, .git, *.md, .env

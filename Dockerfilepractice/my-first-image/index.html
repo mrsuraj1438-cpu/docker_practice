@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alan | DevOps Journey</title>
+
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121826;
+      --card-light: #161d2f;
+      --orange: #ff8a00;
+      --text: #e6e6e6;
+      --muted: #9aa4b2;
+      --border: #1f2937;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #141b2d, #0b0f14);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 32px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #121826, #0f1629);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 28px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.4);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,138,0,.15);
+      color: var(--orange);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: var(--orange);
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: #000;
+    }
+
+    .btn-secondary {
+      background: #1a2236;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* CARDS */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 14px;
+      font-size: 18px;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .list-item {
+      background: var(--card-light);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+    }
+
+    .list-item strong {
+      color: var(--orange);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .list-item span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer span {
+      color: var(--orange);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="badge">🚀 DevOps Journey</div>
+      <h1>Hello, I’m <span>Alan</span> 👋</h1>
+      <p>
+        I’m an aspiring <strong>DevOps Engineer</strong> who believes that
+        <strong>self-learning</strong> and continuous improvement are the keys
+        to real growth. I’m motivated, consistent, and focused on building
+        production-ready skills — not just theory.
+      </p>
+
+      <div class="buttons">
+        <button class="btn btn-primary">Start Learning Today</button>
+        <button class="btn btn-secondary">View My Roadmap</button>
+      </div>
+    </section>
+
+    <!-- GRID -->
+    <section class="grid">
+
+      <!-- LEFT -->
+      <div class="card">
+        <h3>✅ What I’m Working On</h3>
+        <div class="list">
+          <div class="list-item">
+            <strong>Linux & Networking</strong>
+            <span>Strong fundamentals for DevOps foundation</span>
+          </div>
+          <div class="list-item">
+            <strong>Git & GitHub</strong>
+            <span>Version control and collaboration</span>
+          </div>
+          <div class="list-item">
+            <strong>Docker</strong>
+            <span>Containerization & real-world usage</span>
+          </div>
+          <div class="list-item">
+            <strong>CI/CD Pipelines</strong>
+            <span>Automation mindset, not manual work</span>
+          </div>
+          <div class="list-item">
+            <strong>Cloud (AWS)</strong>
+            <span>Learning cloud infrastructure step by step</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="card">
+        <h3>🛠 Dev Updates</h3>
+        <div class="list">
+          <div class="list-item">
+            <strong>Latest Focus</strong>
+            <span>Building DevOps mindset & consistency</span>
+          </div>
+          <div class="list-item">
+            <strong>Next Goal</strong>
+            <span>Deploy a complete CI/CD project</span>
+          </div>
+          <div class="list-item">
+            <strong>Belief</strong>
+            <span>Self-learning beats shortcuts</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      Built with ❤️ by <span>Alan</span> | Dark theme • DevOps mindset
+    </footer>
+
+  </div>
+
+</body>
+</html>
