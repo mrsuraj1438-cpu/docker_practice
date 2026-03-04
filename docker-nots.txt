@@ -1,0 +1,33 @@
+#how to set envionement variable to the mysql:
+
+cmd:  docker run -d --name my-sql-demo -e MYSQL_ROOT_PASSWORD=test@123 mysql : this command is used to run a container with set password 
+
+cmd: docker exec -it my-sql-demo /bin/bash : go to the inside the my-sql-demo container 
+     then -- cmd: mysql -u root -p 
+
+
+mysql port : 3306 
+
+cmd: docker run -d mongo : this command is run the container of mongo
+
+cmd: docker exec -it mongo_continar_id : go to inside the conatiner of mongo
+     after that start mongosh cmd: to start the mongo database
+
+
+# How to write a docker file
+
+@step1: write vi Dockfile
+
+@step2: always remember your docker file  start with From : this is your first step  
+
+@step3: write steps according to your need in docker file
+
+
+#how to create an image:
+
+cmd: docker build -t devop-nginx .(dot for creata an image current direcotry) : this command is used to creata an image using Dockerfile
+     
+     -t --> this is use for tag or name giving for your image
+
+key-points: when you enter the container of nginx: docker run -d --name writecontainer-name -p 1010:80 image_id  
+this path use for when you run your index.html/usr/share/nginx/html/
