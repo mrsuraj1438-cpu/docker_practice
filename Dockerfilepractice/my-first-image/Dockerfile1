@@ -1,0 +1,5 @@
+FROM ubuntu
+
+ENV JAVA_HOME=/opt/java
+
+ENV MYNAME=SURAJ

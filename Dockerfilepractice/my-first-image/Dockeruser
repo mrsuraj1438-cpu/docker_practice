@@ -1,0 +1,24 @@
+FROM ubuntu:latest
+
+# install packages as root
+RUN apt-get update
+
+# create group and user with same UID/GID
+RUN groupadd -g 1044 lusi && \
+    useradd -m -u 1031 -g 1044 -s /bin/bash lusi
+
+# create group and user with same UID/GID
+RUN groupadd -g 1045 rani && \
+    useradd -m -u 1032 -g 1045 -s /bin/bash rani
+
+# switch to that user
+USER lusi
+
+# run command
+RUN touch /tmp/dummy
+
+# switch to that user
+
+USER rani
+
+RUN touch /tmp/dummycreatebyrani

@@ -1,0 +1,10 @@
+FROM ubuntu
+
+RUN touch dummy
+
+WORKDIR /tmp
+
+RUN touch dummynew
+
+WORKDIR /suraj_etc
+
