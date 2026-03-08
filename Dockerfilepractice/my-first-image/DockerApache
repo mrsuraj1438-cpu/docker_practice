@@ -1,0 +1,19 @@
+FROM ubuntu
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y apache2
+
+ENV USERNAME=SURAJ
+
+ENV APACHE_RUN_USER=www-data
+
+ENV APACHE_RUN_GROUP=www-data
+
+RUN echo $USERNAME
+
+COPY index.html /var/www/html
+
+EXPOSE 80 
+
+CMD ["apachectl", "-D", "FOREGROUND"]

@@ -8,3 +8,4 @@ RUN touch dummynew
 
 WORKDIR /suraj_etc
 
+COPY CLASS /suraj_etc

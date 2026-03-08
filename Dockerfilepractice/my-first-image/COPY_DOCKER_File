@@ -1,0 +1,8 @@
+FROM ubuntu
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the CLASS file into the container app directory
+
+COPY CLASS /app/

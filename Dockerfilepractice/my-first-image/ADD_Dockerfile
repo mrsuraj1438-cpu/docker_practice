@@ -1,0 +1,9 @@
+FROM ubuntu
+
+WORKDIR /app
+
+ADD CLASS .
+
+#RUN apt-get update && apt-get install -y wget
+
+#RUN wget  https://raw.githubusercontent.com/docker-library/hello-world/master/README.md 
