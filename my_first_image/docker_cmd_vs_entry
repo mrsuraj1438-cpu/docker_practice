@@ -1,0 +1,11 @@
+FROM alpine
+
+WORKDIR /app
+
+RUN touch hello.txt && echo "Hello, EntryPoint" > hello.txt
+
+ENTRYPOINT ["echo", "Welcome in EntryPoint"]
+
+#CMD ["echo", "hello dosto"]
+
+

@@ -1,0 +1,8 @@
+FROM alpine
+
+WORKDIR /app
+
+RUN echo "hello"
+
+RUN echo "hii"
+

@@ -1,0 +1,17 @@
+FROM ubuntu:latest
+
+LABEL maintainer="alan alank8s@gmail.com"
+
+RUN apt-get update && apt-get install -y
+
+WORKDIR	/app
+
+RUN touch file.txt
+
+RUN echo "hello, brother this is Suraj" > file.txt
+
+ENTRYPOINT ["/bin/bash", "-c", "exec bash"]
+
+#CMD ["echo" , "Hello brother"]
+
+

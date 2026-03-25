@@ -1,0 +1,18 @@
+FROM alpine
+
+
+WORKDIR /app
+
+COPY index.html .
+
+RUN echo "hello"
+
+RUN echo "brother"
+
+RUN echo "byyy"
+
+RUN echo "add workfing dir"
+
+RUN touch file.txt
+
+RUN echo "heello"

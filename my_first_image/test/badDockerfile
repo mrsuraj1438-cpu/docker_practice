@@ -1,0 +1,9 @@
+FROM alpine
+
+RUN apk add curl
+RUN touch file.txt
+RUN echo "hello"
+RUN echo "hello"
+COPY . .
+RUN echo "hii"
+RUN echo "hthis"

@@ -1,0 +1,20 @@
+FROM ubuntu:latest
+
+LABEL 	maintainer="alan"
+
+#RUN apt-get update && apt-get install nginx -y
+
+WORKDIR /test
+
+#RUN touch suraj.txt && echo "you fix that" > suraj.txt
+
+
+#COPY error-log.txt /test
+
+#EXPOSE 80
+
+ENTRYPOINT ["echo", "hi this is from ENTRYPOINT"] 
+
+#CMD ["nginx", "-g", "daemon off;"]
+
+
